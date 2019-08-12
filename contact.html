@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.typekit.net/anw5okx.css">
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="trailblazing"><img
+                src="images/trailblazing_logo.png" alt="">
+                <span>TRAIL BLAZING</span></a>
+                <a href="contact.html">Contact</a>
+                <a href="#" onclick="showActivities()">Adventures &#9662;</a>
+                <a href="#" onclick="showStates()">Destinations &#9662;</a>
+                <a href="services.html">Work with Us</a>
+            <a href="about.html">Our Story</a>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
+            alt="" class="menu">
+
+        <div class="states_grid" id="states_dropdown">
+            <div class="close" id="close_states" onclick="hideStates()">Close Destinations <span>X</span></div>
+            <div class="state">
+                <a href="">
+                    <small>Explore</small>
+                    Arizona
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="utah">
+                <a href="">
+                    <small>Explore</small>
+                    Utah
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="colorado">
+                <a href="">
+                    <small>Explore</small>
+                    Colorado
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="california">
+                <a href="">
+                    <small>Explore</small>
+                    California
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="newmexico">
+                <a href="">
+                    <small>Explore</small>
+                    New Mexico
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="nevada">
+                <a href="">
+                    <small>Explore</small>
+                    Nevada
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="states_grid" id="activities_dropdown">
+            <div class="close" id="close_activities" onclick="hideActivities()">Close Activities <span>X</span></div>
+            <div class="state" id="canyoneering">
+                <a href="">
+                    <small>Try</small>
+                    Canyoneering
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="rockclimbing">
+                <a href="">
+                    <small>Try</small>
+                    Rock Climbing
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="mtnbiking">
+                <a href="">
+                    <small>Try</small>
+                    Mountain Biking
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="cycling">
+                <a href="">
+                    <small>Try</small>
+                    Cycling
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="hiking">
+                <a href="">
+                    <small>Try</small>
+                    Hiking
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="groundtours">
+                <a href="">
+                    <small>Try</small>
+                    Ground Tours
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="airtours">
+                <a href="">
+                    <small>Try</small>
+                    Air Tours
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="watertours">
+                <a href="">
+                    <small>Try</small>
+                    Water Tours
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="horseback">
+                <a href="">
+                    <small>Try</small>
+                    Horseback Riding
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="culinary">
+                <a href="">
+                    <small>Try</small>
+                    Culinary Tours
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="multiday">
+                <a href="">
+                    <small>Try</small>
+                    Multi-Day Tours
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="native">
+                <a href="">
+                    <small>Try</small>
+                    Cultural & Historical Tours
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <aside class="tall" id="contact">
+            <div class="content">
+                    <img src="images/cactus2.png" alt="">
+                    <h2>Contact Us And Take Your First Step Towards</h2>
+                <h1>A Remarkable Southwest Adventure</h1>
+                <hr>
+            <p>Hello! My name is Kirsten — Accredited Travel Agent as well as Co-founder & Owner of Trail Blazing LLC. For general inquiries please complete the form below. You can also reach me directly by phone or email.</p>
+            <a href="#">Contact Me</a>
+            </div>
+        </aside>
+
+    <div class="background" id="contact">
+        <div class="grid thirds">
+            <div class="title">
+                Contact Us
+            </div>
+            <div class="gridbox">
+                <img src="https://img.icons8.com/color/100/000000/shake-phone.png">
+                <h1 class="center">Call</h1>
+                <hr class="center">
+                <p class="center">Call today and prepare for the adventure of a lifetime.</p>
+                <a href="#" class="center">Call Kirsten</a>
+            </div>
+            <div class="gridbox">
+                <img src="https://img.icons8.com/color/100/000000/filled-message.png">
+                <h1 class="center">Email</h1>
+                <hr class="center">
+                <p class="center">Email today and prepare for the adventure of a lifetime.</p>
+                <a href="#" class="center">Email Kirsten</a>
+            </div>
+            <div class="gridbox">
+                <img src="https://img.icons8.com/color/100/000000/imac.png">
+                <h1 class="center">Online</h1>
+                <hr class="center">
+                <p class="center">Submit an online form and prepare for the adventure of a lifetime.</p>
+                <a href="#" class="center">Submit Form</a>
+            </div>
+            <div class="gridbox">
+                <img src="https://img.icons8.com/color/100/000000/facebook.png">
+                <h1 class="center">Connect</h1>
+                <hr class="center">
+                <p class="center">Connect with us on Facebook and see what Trail Blazing Southwest is all about.</p>
+                <a href="#" class="center" style="text-align: center;">Visit Our Facebook</a>
+            </div>
+            <div class="gridbox">
+                <img src="https://img.icons8.com/color/100/000000/twitter.png">
+                <h1 class="center">Connect</h1>
+                <hr class="center">
+                <p class="center">Connect with us on Twitter and see what Trail Blazing Southwest is all about.</p>
+                <a href="#" class="center"  style="text-align: center;">Visit Our Twitter</a>
+            </div>
+            <div class="gridbox">
+                <img src="https://img.icons8.com/color/100/000000/instagram.png">
+                <h1 class="center">Connect</h1>
+                <hr class="center">
+                <p class="center">Connect with us on Instagram and see what Trail Blazing Southwest is all about.</p>
+                <a href="#" class="center"  style="text-align: center;">Visit Our Instagram</a>
+            </div>
+        </div>
+    </div>
+    <article>
+        <div class="content">
+            <h2>Interested in our services?</h2>
+            <h1>Fill Out This Form To Get Started</h1>
+            <hr>
+            <label for="">Name</label>
+            <input type="text" name="" id="" placeholder="Your Name">
+            <label for="">Phone</label>
+            <input type="text" name="" id="" placeholder="555-555-5555">
+            <label for="">Email</label>
+            <input type="text" name="" id="" placeholder="name@email.com">
+            <button>Submit</button>
+        </div>
+    </article>
+    <script src="main.js" async defer></script>
+    <footer>
+        <div class="grid">
+            <div class="row">
+                <img class="logo"
+                    src="images/trailblazing_white.png" alt="">
+                <hr>
+                <a href="#">Tucson, Arizona</a>
+                <a href="#">+1 520-848-8823</a>
+                <a href="#">info@trailblazingsouthwest.com</a>
+                <a href="https://www.facebook.com/trailblazingsouthwest/" target="_blank" class="social"><span class="jam jam-facebook-square"></span></a>
+                <a href="https://www.instagram.com/trailblazingsouthwest/" target="_blank" class="social"><span class="jam jam-instagram"></span></a>
+                <br>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Copyright 2019 &#183; Trail Blazing LLC</a>
+                <br>
+                <a href="https://vecteezy.com"><span class="soft">Graphics by: www.vecteezy.com</span></a>
+                <br>
+                <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons"><span class="soft">Icons made by  Flat
+                        Icons from</span></a> <a href="https://www.flaticon.com/" title="Flaticon"><span class="soft">www.flaticon.com</span></a><a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank"><span class="soft"> is licensed by CC 3.0 BY</span></a>
+            </div>
+            <div class="row">
+                <h1>Activities</h1>
+                <hr>
+                <a href="#">Canyoneering</a>
+                <a href="#">Rock Climbing</a>
+                <a href="#">Mountain Biking</a>
+                <a href="#">Cycling</a>
+                <a href="#">Ground Tours</a>
+                <a href="#">Air Tours</a>
+                <a href="#">Water Tours</a>
+                <a href="#">Horseback Riding</a>
+                <a href="#">Culinary Tours</a>
+                <a href="#">Multi-Day Tours</a>
+                <a href="#">Cultural & Historical Tours</a>
+            </div>
+            <div class="row">
+                <h1>Destinations</h1>
+                <hr>
+                <a href="#">Arizona</a>
+                <a href="#">California</a>
+                <a href="#">Colorado</a>
+                <a href="#">Nevada</a>
+                <a href="#">New Mexico</a>
+                <a href="#">Utah</a>
+            </div>
+            <div class="row">
+                <h1>About Trailblazing Southwest</h1>
+                <hr>
+                <a href="#">About Kirsten</a>
+                <a href="#">Contact Kirsten</a>
+                <a href="#">Work with Kirsten</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

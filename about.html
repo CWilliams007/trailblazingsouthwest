@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.typekit.net/anw5okx.css">
+        <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <nav>
+            <a href="index.html" class="trailblazing"><img
+            src="images/trailblazing_logo.png" alt="">
+            <span>TRAIL BLAZING</span></a>
+            <a href="contact.html">Contact Us</a>
+            <a href="#" onclick="showActivities()">Adventures &#9662;</a>
+            <a href="#" onclick="showStates()">Destinations &#9662;</a>
+            <a href="services.html">Work with Us</a>
+        <a href="about.html">Our Story</a>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
+        alt="" class="menu">
+    
+            <div class="states_grid" id="states_dropdown">
+                <div class="close" id="close_states" onclick="hideStates()">Close Destinations <span>X</span></div>
+                <div class="state">
+                    <a href="">
+                        <small>Explore</small>
+                        Arizona
+                        <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                    </a>
+                </div>
+                <div class="state" id="utah">
+                    <a href="">
+                        <small>Explore</small>
+                        Utah
+                        <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                    </a>
+                </div>
+                <div class="state" id="colorado">
+                    <a href="">
+                        <small>Explore</small>
+                        Colorado
+                        <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                    </a>
+                </div>
+                <div class="state" id="california">
+                    <a href="">
+                        <small>Explore</small>
+                        California
+                        <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                    </a>
+                </div>
+                <div class="state" id="newmexico">
+                    <a href="">
+                        <small>Explore</small>
+                        New Mexico
+                        <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                    </a>
+                </div>
+                <div class="state" id="nevada">
+                    <a href="">
+                        <small>Explore</small>
+                        Nevada
+                        <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="states_grid" id="activities_dropdown">
+                <div class="close" id="close_activities" onclick="hideActivities()">Close Activities <span>X</span></div>
+                <div class="state" id="canyoneering">
+                    <a href="">
+                        <small>Try</small>
+                        Canyoneering
+                        <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                    </a>
+                </div>
+                <div class="state" id="rockclimbing">
+                    <a href="">
+                        <small>Try</small>
+                        Rock Climbing
+                        <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                    </a>
+                </div>
+                <div class="state" id="mtnbiking">
+                    <a href="">
+                        <small>Try</small>
+                        Mountain Biking
+                        <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                    </a>
+                </div>
+                <div class="state" id="cycling">
+                    <a href="">
+                        <small>Try</small>
+                        Cycling
+                        <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                    </a>
+                </div>
+                <div class="state" id="hiking">
+                    <a href="">
+                        <small>Try</small>
+                        Hiking
+                        <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                    </a>
+                </div>
+                <div class="state" id="groundtours">
+                    <a href="">
+                        <small>Try</small>
+                        Ground Tours
+                        <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                    </a>
+                </div>
+                <div class="state" id="airtours">
+                    <a href="">
+                        <small>Try</small>
+                        Air Tours
+                        <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                    </a>
+                </div>
+                <div class="state" id="watertours">
+                    <a href="">
+                        <small>Try</small>
+                        Water Tours
+                        <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                    </a>
+                </div>
+                <div class="state" id="horseback">
+                    <a href="">
+                        <small>Try</small>
+                        Horseback Riding
+                        <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                    </a>
+                </div>
+                <div class="state" id="culinary">
+                    <a href="">
+                        <small>Try</small>
+                        Culinary Tours
+                        <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                    </a>
+                </div>
+                <div class="state" id="multiday">
+                    <a href="">
+                        <small>Try</small>
+                        Multi-Day Tours
+                        <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                    </a>
+                </div>
+                <div class="state" id="native">
+                    <a href="">
+                        <small>Try</small>
+                        Cultural & Historical Tours
+                        <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <aside class="tall">
+            <div class="content">
+                <img src="images/cactus2.png" alt="">
+                <h2>How Did Trail Blazing Get It's Start?</h2>
+                <h1>“All good ideas arrive by chance.”</h1>
+                <h3>- Max Erns</h3>
+                <a href="#">Read Our Story</a>
+            </div>
+        </aside>
+        <article class="story">
+                <div class="content">
+                    <h2>Discover the Story of</h2>
+                    <h1>Trailblazing Southwest</h1>
+                    <hr>
+                    <p>As a native to Arizona I’ve experienced nearly all the must-see tourist destinations in the American Southwest. Places like the Grand Canyon, Monument Valley, Horseshoe Bend, Antelope Canyon, Bryce Canyon and Zion (just to name a few). I enjoy exploring this region and always find something new. We particularly love discovering places off the beaten path.</p>
+                    <p>Deciding to divide my time between Arizona and Germany in 2015 to spend more time with my boyfriend, my ability to speak and understand the German language grew along with my appreciation for European culture as a whole.</p>
+                    <p>My partner and I continued to explore the Southwest during our trips back to Arizona, but our perceptions on these journeys began to change. We were becoming increasingly more aware of the tourists traveling from all corners of the earth to experience The West.</p>
+                    <br>
+                    <h3>That’s when a light bulb went off. What if we combined my knowledge of the region with his German roots to give travelers a unique Southwest experience that no travel agency could match?</h3>
+                    <br>
+                    <h3>Our niche was born.</h3>
+                    <hr>
+                    <p>Trail Blazing Southwest would build highly-customized trip itineraries for travelers seeking one-of-a-kind experiences in the Southwest. We would blaze trails and pioneer new paths to adventures that showcased the breathtaking beauty I had been calling home for close to 30 years.</p>
+                    <p>I’m an Accredited Travel Agent whose developed professional relationships with travel outfitters all across the American Southwest.</p>
+                </div>
+        </article>
+        <div class="background">
+                <div class="grid">
+                        <div class="title">
+                            What makes Trailblazing Southwest different?
+                        </div>
+                        <div class="gridbox">
+                            <h1>Our trips are uniquely designed.</h1>
+                            <hr>
+                            <p>Want to sleep in a traditional Navajo hogan and hear stories told by a member of the tribe? I can arrange that. Hike to Havusu Falls located within the exclusive Havasupai Reservation? I can make that happen. Backpack through the Grand Canyon away from the tourist crowds? No problem.</p>
+                        </div>
+                        <div class="gridbox">
+                                <h1>Our mission is simple.</h1>
+                                <hr>
+                                <p>We want our fellow “wanderlusters” to enjoy unique lodging experiences surrounded by the Southwest’s most beautiful landscapes, have access to exclusive outdoor adventures, and more importantly, come home feeling rejuvenated without troubling themselves with the details.</p>
+                            </div>
+                        </div>
+        </div>
+        <footer>
+            <div class="grid">
+                <div class="row">
+                    <img class="logo"
+                        src="images/trailblazing_white.png" alt="">
+                    <hr>
+                    <a href="#">Tucson, Arizona</a>
+                    <a href="#">+1 520-848-8823</a>
+                    <a href="#">info@trailblazingsouthwest.com</a>
+                    <a href="https://www.facebook.com/trailblazingsouthwest/" target="_blank" class="social"><span class="jam jam-facebook-square"></span></a>
+                    <a href="https://www.instagram.com/trailblazingsouthwest/" target="_blank" class="social"><span class="jam jam-instagram"></span></a>
+                    <br>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Copyright 2019 &#183; Trail Blazing LLC</a>
+                    <br>
+                    <a href="https://vecteezy.com"><span class="soft">Graphics by: www.vecteezy.com</span></a>
+                    <br>
+                    <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons"><span class="soft">Icons made by  Flat
+                            Icons from</span></a> <a href="https://www.flaticon.com/" title="Flaticon"><span class="soft">www.flaticon.com</span></a><a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank"><span class="soft"> is licensed by CC 3.0 BY</span></a>
+                </div>
+                <div class="row">
+                    <h1>Activities</h1>
+                    <hr>
+                    <a href="#">Canyoneering</a>
+                    <a href="#">Rock Climbing</a>
+                    <a href="#">Mountain Biking</a>
+                    <a href="#">Cycling</a>
+                    <a href="#">Ground Tours</a>
+                    <a href="#">Air Tours</a>
+                    <a href="#">Water Tours</a>
+                    <a href="#">Horseback Riding</a>
+                    <a href="#">Culinary Tours</a>
+                    <a href="#">Multi-Day Tours</a>
+                    <a href="#">Cultural & Historical Tours</a>
+                </div>
+                <div class="row">
+                    <h1>Destinations</h1>
+                    <hr>
+                    <a href="#">Arizona</a>
+                    <a href="#">California</a>
+                    <a href="#">Colorado</a>
+                    <a href="#">Nevada</a>
+                    <a href="#">New Mexico</a>
+                    <a href="#">Utah</a>
+                </div>
+                <div class="row">
+                    <h1>About Trailblazing Southwest</h1>
+                    <hr>
+                    <a href="#">About Kirsten</a>
+                    <a href="#">Contact Kirsten</a>
+                    <a href="#">Work with Kirsten</a>
+                </div>
+            </div>
+    
+        </footer>
+        <script src="main.js" async defer></script>
+    </body>
+</html>

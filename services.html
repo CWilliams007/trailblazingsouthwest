@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.typekit.net/anw5okx.css">
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" class="trailblazing"><img
+                src="images/trailblazing_logo.png" alt="">
+                <span>TRAIL BLAZING</span></a>
+            <a href="contact.html">Contact</a>
+            <a href="#" onclick="showActivities()">Adventures &#9662;</a>
+            <a href="#" onclick="showStates()">Destinations &#9662;</a>
+            <a href="services.html">Work with Us</a>
+        <a href="about.html">Our Story</a>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png"
+            alt="" class="menu">
+
+        <div class="states_grid" id="states_dropdown">
+            <div class="close" id="close_states" onclick="hideStates()">Close Destinations <span>X</span></div>
+            <div class="state">
+                <a href="">
+                    <small>Explore</small>
+                    Arizona
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="utah">
+                <a href="">
+                    <small>Explore</small>
+                    Utah
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="colorado">
+                <a href="">
+                    <small>Explore</small>
+                    Colorado
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="california">
+                <a href="">
+                    <small>Explore</small>
+                    California
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="newmexico">
+                <a href="">
+                    <small>Explore</small>
+                    New Mexico
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="nevada">
+                <a href="">
+                    <small>Explore</small>
+                    Nevada
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="states_grid" id="activities_dropdown">
+            <div class="close" id="close_activities" onclick="hideActivities()">Close Activities <span>X</span></div>
+            <div class="state" id="canyoneering">
+                <a href="">
+                    <small>Try</small>
+                    Canyoneering
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="rockclimbing">
+                <a href="">
+                    <small>Try</small>
+                    Rock Climbing
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="mtnbiking">
+                <a href="">
+                    <small>Try</small>
+                    Mountain Biking
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="cycling">
+                <a href="">
+                    <small>Try</small>
+                    Cycling
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="hiking">
+                <a href="">
+                    <small>Try</small>
+                    Hiking
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="groundtours">
+                <a href="">
+                    <small>Try</small>
+                    Ground Tours
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="airtours">
+                <a href="">
+                    <small>Try</small>
+                    Air Tours
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="watertours">
+                <a href="">
+                    <small>Try</small>
+                    Water Tours
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="horseback">
+                <a href="">
+                    <small>Try</small>
+                    Horseback Riding
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="culinary">
+                <a href="">
+                    <small>Try</small>
+                    Culinary Tours
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="multiday">
+                <a href="">
+                    <small>Try</small>
+                    Multi-Day Tours
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+            <div class="state" id="native">
+                <a href="">
+                    <small>Try</small>
+                    Cultural & Historical Tours
+                    <span>Get Started <span class="jam jam-arrow-right"></span></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="services">
+        <div class="content">
+            <img src="images/cactus2.png" alt="">
+            <h1>Why Choose Us to Plan Your Southwest Vacation?</h1>
+            <hr>
+            <p>Our company is called Trail Blazing Southwest for a reason — we forge paths to experiences designed
+                solely with your desires in mind.</p>
+            <p>We’ve experienced many extraordinary trips throughout the Southwest, so we know exactly what goes into
+                planning them — scouring the web, reading countless reviews and praying it all works out.</p>
+            <p><b>But that’s not what you want to spend your precious time doing, is it?</b></p>
+            <a href="#">Work with Me!</a>
+        </div>
+    </header>
+    <section id="services">
+        <div class="content">
+            <h2>Traveling can be stressful, but it doesn’t have to be.</h2>
+            <h1>Get Exactly What You Desire With A Handcrafted Southwest Adventure.</h1>
+            <hr>
+
+            <ul>
+                <li>One-of-a-kind lodging surrounded by the Southwest’s most beautiful landscapes.</li>
+                <li>Access to exclusive outdoor adventures</li>
+                <li>Rejuvenating experiences that bring you closer to nature</li>
+            </ul>
+            <p>But more importantly, you want it all without having to endure the headache that comes with doing the
+                research and planning yourself, right?</p>
+            <p>That’s why you’ll want to enlist us to do the legwork for you!</p>
+            <p>With consultant-exclusive access, a local’s expertise, and a European’s touch, we blaze trails to
+                unforgettable adventures for you and your fellow travelers.</p>
+            <p>It won’t be unforgettable because the airline lost your luggage, your passport went missing-in-action and
+                the tour you booked online was a disappointment, it will be memorable because you were able to savor
+                every moment of the journey and leave the problem solving to us.</p>
+            <a href="#">Get Started</a>
+        </div>
+    </section>
+    <div class="background" id="services">
+        <div class="grid thirds">
+            <div class="title">
+                Our Simple Process
+            </div>
+            <div class="gridbox">
+                <h1>Connect</h1>
+                <hr>
+                <p>After contacting me, we’ll set up a preliminary consultation call at no cost to you. The purpose of
+                    this call is to discover more about your travel style, interests and needs — and to make certain
+                    your desires can be reasonably met!</p>
+            </div>
+            <div class="gridbox">
+                <h1>Select</h1>
+                <hr>
+                <p> We provide support for every step of your journey by offering a variety of different services. You
+                    can choose which services you would like to take advantage of.</p>
+            </div>
+            <div class="gridbox">
+                <h1>Explore</h1>
+                <hr>
+                <p>You pack your bags and ride off into the sunset! It’s that simple.</p>
+            </div>
+        </div>
+    </div>
+    <div class="background" id="services2">
+            <div class="grid">
+                <div class="title">
+                    What makes Trailblazing Southwest different?
+                </div>
+                <div class="gridbox">
+                    <h1>Vacation Design</h1>
+                    <hr>
+                    <p><b>Vacation Design:</b> Making use of my expertise and network of travel outfitters throughout the Southwest region, we’ll design a detailed itinerary proposal that can be further customized to your liking.</p>
+                    <h3>What to expect from our itineraries…</h3>
+                    <ul>
+                        <li>Flight information</li>
+                        <li>Rental car options</li>
+                        <li>Accommodation options</li>
+                        <li>Route description</li>
+                        <li>Destination and national parks information</li>
+                        <li>Activities</li>
+                        <li>Drive-time/mileage</li>
+                        <li> Dining/shopping recommendations</li>     
+                    </ul>
+                </div>
+                <div class="gridbox">
+                    <h1>Vacation Booking</h1>
+                    <hr>
+                    <p><b>Booking:</b> We facilitate the entire booking process for you — flights, lodging and transportation. We’ll take care of everything down to the last detail.</p>
+                    <h3>Including:</h3>
+                    <ul>
+                        <li>Taking care of any issues pertaining to booking that may arise (flight delays, cancellations, etc.)</li>
+                        <li>Procuring upgraded amenities and exclusive bonuses when obtainable</li>
+                        <li>Consulting on various travel requirements (passport, visas, travel insurance, etc.)</li>
+                    </ul>
+                </div>
+                <div class="gridbox wide">
+                        <h1>Vacation Concierge</h1>
+                        <hr>
+                        <p><b>Concierge:</b> Think of us as your personal travel advocates available on-call — 24 hours a day, 7 days a week. We do more than plan itineraries and execute bookings. Depending on your desires and personal circumstances, our services may also include:</p>
+                        <h3>Including:</h3>
+                        <ul>
+                            <li> Providing spontaneous recommendations for unique destinations and activities</li>
+                            <li>Booking private or small-group guided tours and excursions (hiking, mountain biking, rock climbing, canyoneering, rafting, paddle boarding, horseback riding, etc.)</li>
+                            <li>Making reservations for restaurants, workshops and lectures, museum visits and more!</li>
+                            <li>Corresponding with tour operators on your behalf</li>
+                            <li> Managing application processes for necessary permits (i.e. backcountry hiking, overnight camping, etc.)</li>
+                            <li>Allocating translation services (upon availability) for speakers of foreign languages</li>
+                            <li>Assisting with unexpected travel emergencies</li>    
+                        </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="background" id="services3">
+            <div class="grid thirds">
+                <div class="title">
+                    Package Options
+                </div>
+                <div class="gridbox">
+                    <img src="images/copper.jpg" alt="" class="plans">
+                    <img src="" alt="">
+                    <h1 class="center">Copper</h1>
+                    <hr class="center">
+                    <p class="center">Already have your tripped planned, but don’t have the time to manage the booking?</p>
+                    <h3 class="center">We’ll take care of it.</h3>
+                </div>
+                <div class="gridbox">
+                    <img src="images/silver.jpg" alt="" class="plans">
+                    <h1 class="center">Silver</h1>
+                    <hr class="center">
+                    <p class="center">Need assistance with planning and booking your dream vacation?</p>
+                    <h3 class="center">Let us handle it!</h3>
+                </div>
+                <div class="gridbox">
+                    <img src="images/turquoise.jpg" alt="" class="plans">
+                    <h1 class="center">Turquoise</h1>
+                    <hr class="center">
+                    <p class="center">Want us to design your entire trip from start to finish?</p>
+                    <h3 class="center">The package for you!</h3>
+                </div>
+                <div class="gridbox superwide">
+                        <img src="images/gold.jpg" alt="" class="plans">
+                    <h1 class="center">Gold</h1>
+                    <hr class="center">
+                    <p class="center">Don’t want to lift a finger on your trip except to dial our number?</p>
+                    <h3 class="center">Go gold! We will plan it, book it and be at your beck and call 24 hours a day, 7 days a week.</h3>
+            </div>
+            </div>
+        </div>
+    <article>
+        <div class="content">
+            <h2>Interested in our services?</h2>
+            <h1>Fill Out This Form To Get Started</h1>
+            <hr>
+            <label for="">Name</label>
+            <input type="text" name="" id="" placeholder="Your Name">
+            <label for="">Phone</label>
+            <input type="text" name="" id="" placeholder="555-555-5555">
+            <label for="">Email</label>
+            <input type="text" name="" id="" placeholder="name@email.com">
+            <button>Submit</button>
+        </div>
+    </article>
+    <script src="main.js" async defer></script>
+    <footer>
+        <div class="grid">
+            <div class="row">
+                <img class="logo"
+                    src="images/trailblazing_white.png" alt="">
+                <hr>
+                <a href="#">Tucson, Arizona</a>
+                <a href="#">+1 520-848-8823</a>
+                <a href="#">info@trailblazingsouthwest.com</a>
+                <a href="https://www.facebook.com/trailblazingsouthwest/" target="_blank" class="social"><span class="jam jam-facebook-square"></span></a>
+                <a href="https://www.instagram.com/trailblazingsouthwest/" target="_blank" class="social"><span class="jam jam-instagram"></span></a>
+                <br>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Copyright 2019 &#183; Trail Blazing LLC</a>
+                <br>
+                <a href="https://vecteezy.com"><span class="soft">Graphics by: www.vecteezy.com</span></a>
+                <br>
+                <a href="https://www.flaticon.com/authors/flat-icons" title="Flat Icons"><span class="soft">Icons made by  Flat
+                        Icons from</span></a> <a href="https://www.flaticon.com/" title="Flaticon"><span class="soft">www.flaticon.com</span></a><a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank"><span class="soft"> is licensed by CC 3.0 BY</span></a>
+            </div>
+            <div class="row">
+                <h1>Activities</h1>
+                <hr>
+                <a href="#">Canyoneering</a>
+                <a href="#">Rock Climbing</a>
+                <a href="#">Mountain Biking</a>
+                <a href="#">Cycling</a>
+                <a href="#">Ground Tours</a>
+                <a href="#">Air Tours</a>
+                <a href="#">Water Tours</a>
+                <a href="#">Horseback Riding</a>
+                <a href="#">Culinary Tours</a>
+                <a href="#">Multi-Day Tours</a>
+                <a href="#">Cultural & Historical Tours</a>
+            </div>
+            <div class="row">
+                <h1>Destinations</h1>
+                <hr>
+                <a href="#">Arizona</a>
+                <a href="#">California</a>
+                <a href="#">Colorado</a>
+                <a href="#">Nevada</a>
+                <a href="#">New Mexico</a>
+                <a href="#">Utah</a>
+            </div>
+            <div class="row">
+                <h1>About Trailblazing Southwest</h1>
+                <hr>
+                <a href="#">About Kirsten</a>
+                <a href="#">Contact Kirsten</a>
+                <a href="#">Work with Kirsten</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
