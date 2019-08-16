@@ -1,20 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
 
 html {
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
-  }
-  
+}
+
 body {
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 nav {
-    
-
-
-    font-family: futura-pt, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     background: rgba(255, 255, 255, 0.85);
     height: 105px;
     position: fixed;
@@ -24,9 +29,11 @@ nav {
     transition: .4s;
 }
 
-nav a, nav button {
+nav a,
+nav button {
     outline: none;
-    font-family: futura-pt, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     border: none;
     background: none;
     display: inline-block;
@@ -37,7 +44,8 @@ nav a, nav button {
     float: right;
 }
 
-nav > a:hover::after, nav > button:hover::after {
+nav>a:hover::after,
+nav>button:hover::after {
     display: block;
     content: "";
     background: white;
@@ -45,7 +53,8 @@ nav > a:hover::after, nav > button:hover::after {
     width: 100%;
 }
 
-nav > a::after, nav > button::after {
+nav>a::after,
+nav>button::after {
     display: block;
     content: "";
     background: white;
@@ -73,11 +82,11 @@ nav a.trailblazing span {
     padding: 9.5px;
 }
 
-nav  img.menu {
+nav img.menu {
     height: 105px;
     display: none;
     float: right;
-    padding: 30px 20px;
+    padding: 30px 20px 30px 0;
 }
 
 nav .states_grid {
@@ -119,9 +128,12 @@ nav .states_grid .close {
 
 nav .states_grid .close span {
     background: rgb(24, 24, 24);
-    padding: 0 8px;
+    padding: 0;
+    margin-left: 4px;
     border-radius: 30px;
     color: white;
+    float: right;
+    font-size: 28px;
 }
 
 .show {
@@ -149,7 +161,8 @@ nav .states_grid .close span {
 .state a {
     display: block;
     color: white;
-    font-family: futura-pt, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     margin: 0 auto;
     padding: 40px 0;
     font-size: 36px;
@@ -162,7 +175,8 @@ nav .states_grid .close span {
 .states_grid .state small {
     color: white;
     font-size: 16px;
-    font-family: miller-headline, serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     text-transform: uppercase;
     display: block;
     text-align: center;
@@ -171,18 +185,16 @@ nav .states_grid .close span {
 
 .states_grid .state span {
     color: white;
-    font-size: 18px;
+    font-size: 32px;
     color: white;
-    font-family: miller-headline, serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     text-transform: uppercase;
     display: block;
     text-align: center;
     margin: 0;
 }
 
-.states_grid .state span > span {
-    display: inline;
-}
 
 .states_grid .state#utah {
     background: linear-gradient(to top, black, transparent), url("https://images.unsplash.com/photo-1482446439224-59276c41a5fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
@@ -297,13 +309,34 @@ header {
     background-size: cover;
     margin: 0 0 20px 0;
     padding: 220px 20px 120px;
+    position: relative;
 }
 
-header#services {
+header .large_text {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: rgba(255, 255, 255, 0.1);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20vw;
+    font-weight: 700;
+}
+
+
+header.services {
     background: url("https://images.unsplash.com/photo-1527786356703-4b100091cd2c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80");
     background-position: left;
     background-size: cover;
 }
+
+header#arizona {
+    background: linear-gradient(to bottom, rgb(139, 214, 207, .75), rgba(0, 0, 0, 0.75)), url("https://images.unsplash.com/photo-1466495227171-d05d7e3ac2b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1401&q=80");
+    background-position: left;
+    background-size: cover;
+}
+
 
 aside.tall {
     background: linear-gradient(to bottom, rgb(139, 214, 207), rgba(255, 255, 255, 0)), url("https://images.unsplash.com/photo-1527824404775-dce343118ebc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
@@ -314,7 +347,7 @@ aside.tall {
     padding: 220px 20px 680px;
 }
 
-aside.tall#contact {
+aside.tall.contact {
     background: linear-gradient(to bottom, rgb(139, 214, 207), rgba(255, 255, 255, 0)), url("https://images.unsplash.com/photo-1468173376803-727a153c27ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
     display: block;
     background-position: center;
@@ -322,6 +355,8 @@ aside.tall#contact {
 }
 
 header .content {
+    position: relative;
+    z-index: 10;
     display: block;
     background: rgba(255, 255, 255, 0.75);
     padding: 40px 36px;
@@ -332,36 +367,34 @@ header .content {
     outline-offset: -20px;
 }
 
-header img {
-    display: block;
-    height: 100px;
-    margin: 0 auto 40px;
-}
 
+header img,
 aside img {
     display: block;
-    width: 100px;
     height: 100px;
     margin: 0 auto 40px;
-    background: rgb(139, 214, 207);
-    padding: 10px 20px;
-    border-radius: 50%;
 }
 
- .content h1, .gridbox h1 {
-    font-family: futura-pt, sans-serif;
+
+.content h1,
+.gridbox h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     color: rgb(47, 47, 47);
     font-size: 48px;
     margin: 0;
     line-height: 1em;
 }
 
-.content h1.center, .gridbox h1.center {
+.content h1.center,
+.gridbox h1.center {
     text-align: center;
 }
 
-.content h3, .gridbox h3 {
-    font-family: futura-pt, sans-serif;
+.content h3,
+.gridbox h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     color: rgb(47, 47, 47);
     font-size: 24px;
     margin: 0;
@@ -376,8 +409,10 @@ aside img {
     border: 12px white double;
 }
 
-.content h3.center, .gridbox h3.center {
-    font-family: futura-pt, sans-serif;
+.content h3.center,
+.gridbox h3.center {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     color: rgb(47, 47, 47);
     font-size: 24px;
     margin: 0;
@@ -385,8 +420,10 @@ aside img {
     text-align: center;
 }
 
- .content h2, .gridbox h2 {
-    font-family: miller-headline, serif;
+.content h2,
+.gridbox h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     color: rgb(47, 47, 47);
     font-size: 22px;
     text-transform: uppercase;
@@ -394,28 +431,42 @@ aside img {
     line-height: 1em;
 }
 
- .content hr, .gridbox hr {
+.content h2.center,
+.gridbox h2.center {
+    text-align: center;
+}
+
+
+.content hr,
+.gridbox hr {
     border: 4px rgb(47, 47, 47) solid;
     width: 40px;
     margin: 20px 0 10px
 }
 
-.content hr.center, .gridbox hr.center {
+.content hr.center,
+.gridbox hr.center {
     display: block;
     margin: 20px auto 10px;
 }
 
- .content p, label, .gridbox p,ul {
-    font-family: miller-headline, serif;
+.content p,
+label,
+.gridbox p,
+ul {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     color: rgb(47, 47, 47);
     font-size: 22px;
     margin: 12px 0;
     line-height: 1.35em;
 }
 
-.content small, .gridbox small {
+.content small,
+.gridbox small {
     display: block;
-    font-family: miller-headline, serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     color: rgb(47, 47, 47);
     font-size: 16px;
     margin: 12px 0 0;
@@ -423,13 +474,19 @@ aside img {
     text-align: center;
 }
 
-.content p.center, label.center, .gridbox p.center,ul.center {
+.content p.center,
+label.center,
+.gridbox p.center,
+ul.center {
     text-align: center;
 }
 
- .content a, .content button, .gridbox a {
+.content a,
+.content button,
+.gridbox a {
     display: inline-block;
-    font-family: futura-pt, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     color: rgb(47, 47, 47);
     font-size: 28px;
     padding: 10px 20px;
@@ -440,27 +497,45 @@ aside img {
     border: none;
 }
 
-.content button:hover {
+.content button:hover, .content button:active{
     cursor: pointer;
 }
-
-.content a.center, .content button.center, .gridbox a.center {
+.content a.center,
+.content button.center,
+.gridbox a.center {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
 
+header .content.clear {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+header .content.clear h1, header .content.clear h2, header .content.clear h3, header .content.clear p {
+    color: white;
+}
+
+header .content.clear hr {
+    border-color: white;
+}
+
+
 input {
     display: block;
     background: white;
     padding: 8px 16px;
-    font-family: futura-pt, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     color: rgb(47, 47, 47);
     border: rgb(139, 214, 207) 2px solid;
     font-size: 22px;
 }
 
-section .content a, article .content.teal a {
+section .content a,
+article .content.teal a {
     background: rgb(139, 214, 207);
 }
 
@@ -473,7 +548,7 @@ section {
     padding: 120px 20px;
 }
 
-section#services {
+section.services {
     display: block;
     background: url("https://images.unsplash.com/photo-1478772157037-9eaf7667d225?ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80");
     background-position: right;
@@ -499,7 +574,7 @@ section .content {
     max-width: 800px;
     padding: 40px 30px;
     background: rgba(255, 255, 255, 0.75);
-}  
+}
 
 article {
     background: url("https://images.unsplash.com/photo-1455763916899-e8b50eca9967?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
@@ -520,7 +595,7 @@ div.background {
     margin: 20px 0;
 }
 
-div.background#services {
+div.background.services {
     background: url("https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
     display: block;
     background-position: center;
@@ -548,8 +623,8 @@ div.background#services3 {
     margin-top: 20px;
 }
 
-div.background#contact {
-    background: url("https://images.unsplash.com/photo-1485832329521-e944d75fa65e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+div.background.contact {
+    background: url("https://images.pexels.com/photos/48182/startrails-monument-valley-night-arizona-48182.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     display: block;
     background-position: center;
     background-size: cover;
@@ -571,6 +646,55 @@ div.grid.thirds {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
+}
+
+div.grid.contactlinks {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+}
+
+div.grid.contactlinks a {
+    display: block;
+    margin: 20px;
+    padding: 40px 30px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 6px white solid;
+    outline: 3px white solid;
+    outline-offset: -20px;
+    text-decoration: none;
+}
+
+div.grid.contactlinks a span {
+    display: inline-block;
+    color: rgb(47, 47, 47);
+    font-size: 48px;
+    text-align: center;
+    background: rgb(139, 214, 207);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    border-radius: 80px;
+}
+
+div.grid.contactlinks a h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: rgb(47, 47, 47);
+    margin: 10px 0 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+div.grid.contactlinks a h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: rgb(47, 47, 47);
+    margin: 10px 0 0;
+    text-align: center;
+    font-size: 16px;
 }
 
 div.grid .gridbox {
@@ -599,7 +723,8 @@ div.grid .gridbox.superwide {
 
 
 div.grid .title {
-    font-family: futura-pt, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     font-weight: bold;
     color: rgb(47, 47, 47);
     font-size: 48px;
@@ -614,7 +739,8 @@ div.grid .title {
 }
 
 div.grid.thirds .title {
-    font-family: futura-pt, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     font-weight: bold;
     color: rgb(47, 47, 47);
     font-size: 48px;
@@ -623,6 +749,22 @@ div.grid.thirds .title {
     margin: 0 20px;
     padding: 20px 30px;
     grid-column: 1 / span 3;
+    border: 6px white solid;
+    outline: 3px white solid;
+    outline-offset: -20px;
+}
+
+div.grid.contactlinks .title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-weight: bold;
+    color: rgb(47, 47, 47);
+    font-size: 48px;
+    background: rgba(255, 255, 255, 0.75);
+    display: block;
+    margin: 0 20px;
+    padding: 20px 30px;
+    grid-column: 1 / span 4;
     border: 6px white solid;
     outline: 3px white solid;
     outline-offset: -20px;
@@ -682,7 +824,10 @@ section .content.orange a {
     background: rgb(139, 214, 207);
 }
 
-aside h1, aside h2, aside h3, aside p {
+aside h1,
+aside h2,
+aside h3,
+aside p {
     text-align: center;
 }
 
@@ -717,7 +862,8 @@ footer .row {
 }
 
 footer a {
-    font-family: futura-pt, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     color: white;
     font-size: 18px;
     margin: 0;
@@ -744,7 +890,8 @@ footer hr {
 }
 
 footer h1 {
-    font-family: futura-pt, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     color: white;
     font-size: 32px;
     margin: 0;
@@ -765,7 +912,7 @@ footer img.logo {
 }
 
 @media (max-width: 1100px) {
-    nav > a {
+    nav>a {
         display: none;
     }
 
@@ -773,15 +920,22 @@ footer img.logo {
         display: inline-block;
     }
 
-    nav  img.menu {
+    nav img.menu {
         display: inline-block;
     }
-}
 
-@media (max-width: 1000px) {
     div.grid.thirds {
         display: block;
     }
+
+    div.grid.contactlinks {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div.grid.contactlinks .title {
+        grid-column: 1 /span 2;
+    }
+
 }
 
 @media (max-width: 740px) {
@@ -796,9 +950,17 @@ footer img.logo {
 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
 
     nav a.trailblazing span {
         display: none;
+    }
+
+    div.grid.contactlinks {
+        grid-template-columns: 1fr;
+    }
+
+    div.grid.contactlinks .title {
+        grid-column: 1;
     }
 }
