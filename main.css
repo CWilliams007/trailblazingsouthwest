@@ -17,6 +17,11 @@ body {
     overflow-x: hidden;
 }
 
+.spacer {
+    display: block;
+    height: 20px;
+}
+
 nav {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -27,6 +32,40 @@ nav {
     width: 100%;
     z-index: 99;
     transition: .4s;
+}
+
+div.cookies {
+    background: rgba(255, 255, 255, 0.75);
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    z-index: 101;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    transition: 1.4s bottom;
+}
+
+div.cookies span {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+div.cookies button, div.cookies a {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: rgb(47, 47, 47);
+    margin-right: 10px;
+    font-size: 18px;
+    padding: 8px 16px;
+    line-height: 1.35em;
+    text-decoration: none;
+    background: rgb(139, 214, 207);
+    margin-top: 10px;
+    border: none;
 }
 
 nav a,
@@ -324,19 +363,30 @@ header .large_text {
     font-weight: 700;
 }
 
+header#arizona {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("https://images.unsplash.com/photo-1466495227171-d05d7e3ac2b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1401&q=80");
+    background-position: top center;
+    background-size: cover;
+}
+
+header#utah {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("https://images.unsplash.com/photo-1458872820079-09bf874886ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80");
+    background-position: top center;
+    background-size: cover;
+}
+
+header#canyoneering_banner {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.75)), url("https://images.unsplash.com/photo-1497300201756-9411d3d08327?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+    background-position: top center;
+    background-size: cover;
+}
+
 
 header.services {
     background: url("https://images.unsplash.com/photo-1527786356703-4b100091cd2c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80");
     background-position: left;
     background-size: cover;
 }
-
-header#arizona {
-    background: linear-gradient(to bottom, rgb(139, 214, 207, .75), rgba(0, 0, 0, 0.75)), url("https://images.unsplash.com/photo-1466495227171-d05d7e3ac2b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1401&q=80");
-    background-position: left;
-    background-size: cover;
-}
-
 
 aside.tall {
     background: linear-gradient(to bottom, rgb(139, 214, 207), rgba(255, 255, 255, 0)), url("https://images.unsplash.com/photo-1527824404775-dce343118ebc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
@@ -508,6 +558,9 @@ ul.center {
     transform: translateX(-50%);
 }
 
+button:hover, button:active {
+    cursor: pointer;
+}
 header .content.clear {
     background: none;
     border: none;
@@ -532,6 +585,10 @@ input {
     color: rgb(47, 47, 47);
     border: rgb(139, 214, 207) 2px solid;
     font-size: 22px;
+    resize: horizontal;
+    width: 100%;
+     max-width: 500px;
+     box-sizing: border-box;
 }
 
 section .content a,
@@ -566,6 +623,69 @@ section#about {
     padding: 120px 20px;
 }
 
+section#destination_arizona {
+    display: block;
+    background: url("https://images.unsplash.com/photo-1526111787490-c108ba3880b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1460&q=80");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 20px;
+}
+
+section#destination_arizona2 {
+    display: block;
+    background: url("https://images.unsplash.com/photo-1489275259429-70f6ef5705c1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 20px;
+}
+
+section#destination_arizona3 {
+    display: block;
+    background: url("https://images.unsplash.com/photo-1480004902249-cdb28d6a01a4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1472&q=80");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 20px;
+}
+
+aside#destination_arizona4 {
+    display: block;
+    background: url("https://images.unsplash.com/photo-1500076898857-ad1ff4074429?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 20px;
+}
+
+section#destination_utah {
+    display: block;
+    background: url("https://images.unsplash.com/photo-1485068998061-c1086023c044?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1442&q=80");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 20px;
+}
+
+section#destination_utah2 {
+    display: block;
+    background: url("https://images.unsplash.com/photo-1458872890453-672eb04aa339?ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 20px;
+}
+
+section#adventure_canyon {
+    display: block;
+    background: url("https://images.unsplash.com/photo-1516298773066-c48f8e9bd92b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 20px;
+}
+
 section .content {
     display: block;
     border: 6px white solid;
@@ -575,6 +695,16 @@ section .content {
     padding: 40px 30px;
     background: rgba(255, 255, 255, 0.75);
 }
+
+section .content.right {
+    float: right;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 article {
     background: url("https://images.unsplash.com/photo-1455763916899-e8b50eca9967?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
@@ -935,7 +1065,12 @@ footer img.logo {
     div.grid.contactlinks .title {
         grid-column: 1 /span 2;
     }
+}
 
+@media (max-width: 1000px) {
+    footer .grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (max-width: 740px) {

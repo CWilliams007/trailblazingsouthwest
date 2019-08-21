@@ -23,3 +23,26 @@ function hideStates() {
     
     document.getElementById("close_states").classList.remove("close_show");
 }
+
+function killCookies() {
+    document.getElementById("cookies_agree").style.bottom = "-400px";
+}
+
+// Parallax
+(function(){
+
+    var parallax = document.querySelectorAll("header#arizona, header#utah, header#canyoneering_banner"),
+        speed = 0.2;
+  
+    window.onscroll = function(){
+      [].slice.call(parallax).forEach(function(el,i){
+  
+        var windowYOffset = window.pageYOffset,
+            elBackgrounPos = "50% " + (windowYOffset * speed) + "px";
+  
+        el.style.backgroundPosition = elBackgrounPos;
+  
+      });
+    };
+  
+  })();
